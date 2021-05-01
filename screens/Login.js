@@ -1,13 +1,38 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { 
+    Container, 
+    Content, 
+    Form, 
+    Item, 
+    Label, 
+    Input,
+    Button,
+    Text
+ } from 'native-base';
+
 
 class Login extends Component
 {
     render() {
         return (
-            <View>
-                <Text>Login</Text>
-            </View>
+            <Container>
+                <Content>
+                    <Form>
+                        <Item fixedLabel>
+                            <Label>Username</Label>
+                            <Input />
+                        </Item>
+                        <Item fixedLabel last>
+                            <Label>Password</Label>
+                            <Input />
+                        </Item>
+
+                        <Button block info>
+                            <Text>Login</Text>
+                        </Button>
+                    </Form>
+                </Content>
+            </Container>
         );
     }
 }
