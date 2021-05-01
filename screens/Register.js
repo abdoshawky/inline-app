@@ -1,13 +1,44 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { 
+    Container, 
+    Content, 
+    Form, 
+    Item, 
+    Label, 
+    Input,
+    Button,
+    Text
+ } from 'native-base';
+
 
 class Register extends Component
 {
     render() {
         return (
-            <View>
-                <Text>Register</Text>
-            </View>
+            <Container>
+                <Content>
+                    <Form>
+                        <Item fixedLabel>
+                            <Label>Name</Label>
+                            <Input />
+                        </Item>
+
+                        <Item fixedLabel>
+                            <Label>Email</Label>
+                            <Input />
+                        </Item>
+
+                        <Item fixedLabel last>
+                            <Label>Password</Label>
+                            <Input />
+                        </Item>
+
+                        <Button block info>
+                            <Text>Register</Text>
+                        </Button>
+                    </Form>
+                </Content>
+            </Container>
         );
     }
 }

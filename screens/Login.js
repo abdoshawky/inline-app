@@ -19,7 +19,7 @@ class Login extends Component
                 <Content>
                     <Form>
                         <Item fixedLabel>
-                            <Label>Username</Label>
+                            <Label>Email</Label>
                             <Input />
                         </Item>
                         <Item fixedLabel last>
