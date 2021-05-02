@@ -7,7 +7,10 @@ import {
     Label, 
     Input,
     Button,
-    Text
+    Text,
+    Header,
+    Body,
+    Title
  } from 'native-base';
 
 
@@ -16,6 +19,11 @@ class Login extends Component
     render() {
         return (
             <Container>
+                <Header>
+                    <Body>
+                        <Title>Login</Title>
+                    </Body>
+                </Header>
                 <Content>
                     <Form>
                         <Item fixedLabel>
