@@ -6,6 +6,8 @@ import { Ionicons } from '@expo/vector-icons';
 import Home from './screens/Home';
 import Login from './screens/Login';
 import Register from './screens/Register';
+import CreateLine from './screens/CreateLine';
+
 
 class App extends React.Component {
 	state = {
@@ -27,7 +29,7 @@ class App extends React.Component {
 			return <AppLoading />;
 		}
 
-		return <Home />;
+		return <CreateLine />;
 	}
 }
 

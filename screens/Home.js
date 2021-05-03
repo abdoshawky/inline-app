@@ -6,8 +6,6 @@ import {
     Title, 
     Header,
     Text,
-    Card,
-    CardItem,
     Button
  } from 'native-base';
 
